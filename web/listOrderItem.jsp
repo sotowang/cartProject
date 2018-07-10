@@ -21,4 +21,11 @@
             <td><a href="deleteOrderItem?pid=${oi.product.id}">删除</a> </td>
         </tr>
     </c:forEach>
+    <c:if test="${!empty ois}">
+        <tr>
+            <td colspan="5" align="right">
+                <a href="createOrder">生成订单</a>
+            </td>
+        </tr>
+    </c:if>
 </table>
