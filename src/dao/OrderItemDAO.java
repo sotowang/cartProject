@@ -29,9 +29,8 @@ public class OrderItemDAO {
 
             PreparedStatement ps = c.prepareStatement(sql);
 
-            ps.setInt(1,oi.getNum());
-            ps.setInt(2,oi.getProduct().getId());
-
+            ps.setInt(1,oi.getProduct().getId());
+            ps.setInt(2,oi.getNum());
             ps.setInt(3,oi.getOrder().getId());
 
             ps.execute();
